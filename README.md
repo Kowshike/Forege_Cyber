@@ -47,12 +47,12 @@ The program simulated real-world cybersecurity challenges, requiring technical s
 ---
 
 ## **⚙️ How to Use This Repository**
-1. Open the downloaded zip & extract it 
-Run the brute-force decryption script:Through the VS code 
-python bruteforce.py
-Check the output for the decrypted file.=you will get the .docx file output
+1. Open the downloaded zip & extract it. 
+2. Run the brute-force decryption script: Through the VS code 
+-python bruteforce.py
+3. Check the output for the decrypted file.=you will get the .docx file output
+4. 
 📂 Folder Structure
-
 Forage_Cyber/
 │-- EncryptedFilePack/
 │   │-- bruteforce.py        # Python script for brute-force decryption
