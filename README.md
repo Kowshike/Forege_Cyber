@@ -51,7 +51,46 @@ The program simulated real-world cybersecurity challenges, requiring technical s
 2. Run the brute-force decryption script: Through the VS code 
 -python bruteforce.py
 3. Check the output for the decrypted file.=you will get the .docx file output
-4. 
+4. Edit the .py code to perform the bruteforce attack.
+
+## **🔐 Brute-Force Decryption Script**
+The following Python script attempts to brute-force the password of an **encrypted ZIP file** using a wordlist (**rockyou.txt**):
+
+```python
+from zipfile import ZipFile
+
+# Attempt to extract the zip file with a given password
+def attempt_extract(zf_handle, password):
+    """Try to extract the encrypted ZIP file with the given password."""
+    try:
+        zf_handle.extractall(pwd=password)
+        print(f"[+] Password found: {password.decode()}")
+        return True
+    except:
+        return False
+
+def main():
+    print("[+] Beginning brute-force attack...")
+
+    # Open the encrypted ZIP file
+    with ZipFile('enc.zip') as zf:
+        # Open the Rockyou wordlist
+        with open('rockyou.txt', 'rb') as f:
+            # Iterate through each password in the wordlist
+            for password in f:
+                password = password.strip()
+                if attempt_extract(zf, password):
+                    print("[+] File successfully decrypted!")
+                    return
+
+    # If no password matches, print this message
+    print("[-] Password not found in the wordlist.")
+
+if __name__ == "__main__":
+    main()
+
+
+
 📂 Folder Structure
 Forage_Cyber/
 │-- EncryptedFilePack/
