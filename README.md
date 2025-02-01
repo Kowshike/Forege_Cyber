@@ -54,12 +54,14 @@ The program simulated real-world cybersecurity challenges, requiring technical s
 4. Edit the .py code to perform the bruteforce attack.
 
 📂 Folder Structure
+
 Forage_Cyber/
 │-- EncryptedFilePack/
 │   │-- bruteforce.py        # Python script for brute-force decryption
 │   │-- enc.zip              # Encrypted ZIP file
 │   │-- rockyou.txt          # Wordlist for password brute-forcing
 │-- README.md                # Documentation file
+
 🎯 Conclusion
 This program provided real-world cybersecurity experience, equipping me with practical skills in vulnerability assessment, incident response, and ethical hacking. The hands-on approach made learning engaging and applicable to real-world cybersecurity challenges.
 
