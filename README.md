@@ -53,14 +53,24 @@ The program simulated real-world cybersecurity challenges, requiring technical s
 3. Check the output for the decrypted file.=you will get the .docx file output
 4. Edit the .py code to perform the bruteforce attack.
 
-📂 Folder Structure
+## 📂 Folder Structure
 
-Forage_Cyber/
-│-- EncryptedFilePack/
-│   │-- bruteforce.py        # Python script for brute-force decryption
-│   │-- enc.zip              # Encrypted ZIP file
-│   │-- rockyou.txt          # Wordlist for password brute-forcing
-│-- README.md                # Documentation file
+The repository is structured as follows:
+
+1️⃣ **Main Directory: `Forage_Cyber/`**
+   - Contains the main files related to the cybersecurity virtual experience program.
+
+2️⃣ **Subdirectory: `EncryptedFilePack/`**
+   - This folder contains the encrypted ZIP file, brute-force script, and the password wordlist.
+
+3️⃣ **Files Inside `EncryptedFilePack/`**
+   - `bruteforce.py` → Python script to perform brute-force decryption.
+   - `enc.zip` → Encrypted ZIP file (target for brute-force decryption).
+   - `rockyou.txt` → Wordlist containing potential passwords.
+
+4️⃣ **Root-Level Files**
+   - `README.md` → Documentation file explaining the project.
+
 
 🎯 Conclusion
 This program provided real-world cybersecurity experience, equipping me with practical skills in vulnerability assessment, incident response, and ethical hacking. The hands-on approach made learning engaging and applicable to real-world cybersecurity challenges.
